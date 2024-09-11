@@ -6,7 +6,8 @@ public class LoopDoWhile2 { // Clase LoopDoWhile2
     public static void main(String[] args){ // Método main
         Scanner in = new Scanner(System.in); // Crear un objeto Scanner
         int repeat = 0; // Variable para almacenar si el usuario desea introducir otro número
-        int sum = 0, input = 0; // Acumulador y variable para almacenar el número introducido por el usuario
+        int input = 0; // Variable para almacenar el número introducido por el usuario
+        int sum = 0; // Acumulador
         do{ // Hacer
             System.out.println("Enter a number"); // Solicitar al usuario que introduzca un número
             input = in.nextInt(); // Leer un número entero
