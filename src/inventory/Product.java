@@ -5,6 +5,7 @@ public class Product {
     private String name;
     private int qty;
     private int price;
+    private boolean active = true;
 
     public Product() {
     }
@@ -14,6 +15,7 @@ public class Product {
         this.name = name;
         this.qty = qty;
         this.price = price;
+        this.active =active;
     }
 
     public int getId() {
@@ -48,7 +50,11 @@ public class Product {
         this.price = price;
     }
 
+    public boolean getActive(){return this.active;}
+
+    public void setActive(boolean active){this.active=active;}
+
     public String toString() {
-        return "Product[Item Number=" + this.id + ", Name=" + this.name + ", Quantity in stock=" + this.qty + ", Price=" + this.price + "]";
+        return "Product[Item Number=" + this.id + ", Name=" + this.name + ", Quantity in stock=" + this.qty + ", Price=" + this.price + ", Product Status= " + this.active + "]";
     }
 }
