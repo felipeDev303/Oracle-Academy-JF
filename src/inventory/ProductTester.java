@@ -30,30 +30,22 @@ public class ProductTester {
            System.out.println("Ingrese el precio del producto: ");
            tempPrice = in.nextInt();
 
-
            // Crear el objeto p1 usando el constructor que toma 4 parámetros
            Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
-           // Solicitar al usuario que introduzca valores para los atributos de Product para crear Producto 2(p2)
-           System.out.println("Ingrese el número de producto (id): ");
-           tempNumber = in.nextInt();
-           in.nextLine();  // Consumir la nueva línea pendiente
 
-           System.out.println("Ingrese el nombre del producto: ");
-           tempName = in.nextLine();
+           // Llamar al setter para modificar el estado de activo
+           // p1.setActive(false); // esto cambiaría el estado de activo a falso
 
-           System.out.println("Ingrese la cantidad en stock: ");
-           tempQty = in.nextInt();
+           // Verificar el valor actualizado usando el getter
+           // System.out.println("Estado del producto: " + (p1.isActive() ? "Activo":"Descatalogado"));
 
-           System.out.println("Ingrese el precio del producto: ");
-           tempPrice = in.nextInt();
-
-           // Crear el objeto p1 usando el constructor que toma 4 parámetros
-           Product p2 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
            // Imprimir el objeto p1
            System.out.println(p1);
-           System.out.println(p2);
+
+           // Llamar al setter del método del cálculo del inventario
+           // p1.getInventoryValue();
 
            // Cerrar el Scanner
            in.close();
