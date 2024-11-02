@@ -1,4 +1,4 @@
-package cuentas;
+package cuentascorriente;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

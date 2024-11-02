@@ -1,4 +1,4 @@
-package cuentas;
+package cuentascorriente;
 
 public class Main {
     public static void main(String[] args) {

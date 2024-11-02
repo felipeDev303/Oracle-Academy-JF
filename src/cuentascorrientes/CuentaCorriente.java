@@ -1,4 +1,4 @@
-package cuentas;
+package cuentascorriente;
 
 public class CuentaCorriente {
     private String titular;
