@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Algebra" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AppCuentaCorriente" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AppCuentasCorrientes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExamenFinal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculadora_basica" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/inventory" vcs="Git" />
   </component>
 </project>
