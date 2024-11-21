@@ -1,4 +1,4 @@
-package exceptions;
+/*package exceptions;
 
 public class ErrorDeSintaxis {
     public static void main(String[] args) {
@@ -7,4 +7,4 @@ public class ErrorDeSintaxis {
             System.out.println(fuzz)
         }
     }// Falta ;
-}
+}*/
