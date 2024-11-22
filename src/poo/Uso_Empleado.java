@@ -6,7 +6,7 @@ import java.util.*;
 public class Uso_Empleado {
     public static void main(String[]args){
 
-        // Creamos 3 instancias (objetos) de la clase Empleado
+        /*// Creamos 3 instancias (objetos) de la clase Empleado
         Empleado empleado1=new Empleado("Felipe Morales",500000,2020,12,11);
         Empleado empleado2=new Empleado("Papu Gomez",400000,2021,11,10);
         Empleado empleado3=new Empleado("Lionel Messi",600000,2017,9,8);
@@ -23,8 +23,30 @@ public class Uso_Empleado {
                 + " Fecha de contrato: " + empleado2.getFechaContrato());
 
         System.out.println("Nombre: " + empleado3.getNombre() + " ,su nuevo sueldo es "+ empleado3.getSueldo()
-                + " Fecha de contrato: " + empleado3.getFechaContrato());
+                + " Fecha de contrato: " + empleado3.getFechaContrato());*/
 
+        // Versión con arrays
+        Empleado[] misEmpleados=new Empleado[3];
+        misEmpleados[0]=new Empleado("Felipe Morales",500000,2020,12,11);
+        misEmpleados[1]=new Empleado("Papu Gomez",400000,2021,11,10);
+        misEmpleados[2]=new Empleado("Lionel Messi",600000,2017,9,8);
+
+        /*for(int i=0;i<misEmpleados.length;i++){
+            misEmpleados[i].subeSueldo(5);
+        }
+
+        for(int i=0;i<misEmpleados.length;i++){
+            System.out.println("Nombre: " + misEmpleados[i].getNombre() + " Sueldo: "+ misEmpleados[i].getSueldo() + " Fecha Contrato: "+misEmpleados[i].getFechaContrato());
+        }*/
+
+        // Versión for mejorado
+        for(Empleado e: misEmpleados){
+            e.subeSueldo(5);
+        }
+
+        for(Empleado e: misEmpleados){
+            System.out.println("Nombre: " + e.getNombre() + " Sueldo: "+ e.getSueldo() + " Fecha Contrato: "+ e.getFechaContrato());
+        }
     }
 }
 
