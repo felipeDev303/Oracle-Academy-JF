@@ -6,6 +6,25 @@ import java.util.*;
 public class Uso_Empleado {
     public static void main(String[]args){
 
+        // Creamos 3 instancias (objetos) de la clase Empleado
+        Empleado empleado1=new Empleado("Felipe Morales",500000,2020,12,11);
+        Empleado empleado2=new Empleado("Papu Gomez",400000,2021,11,10);
+        Empleado empleado3=new Empleado("Lionel Messi",600000,2017,9,8);
+
+        // Utilizamos el método sube sueldo
+        empleado1.subeSueldo(5);
+        empleado2.subeSueldo(5);
+        empleado3.subeSueldo(5);
+
+        System.out.println("Nombre: " + empleado1.getNombre() + " ,su nuevo sueldo es "+ empleado1.getSueldo()
+        + " Fecha de contrato: " + empleado1.getFechaContrato());
+
+        System.out.println("Nombre: " + empleado2.getNombre() + " ,su nuevo sueldo es "+ empleado2.getSueldo()
+                + " Fecha de contrato: " + empleado2.getFechaContrato());
+
+        System.out.println("Nombre: " + empleado3.getNombre() + " ,su nuevo sueldo es "+ empleado3.getSueldo()
+                + " Fecha de contrato: " + empleado3.getFechaContrato());
+
     }
 }
 
