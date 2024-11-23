@@ -10,10 +10,10 @@ public class Pruebas {
 
         trabajador1.setSeccion("IT");
 
-        System.out.println(trabajador1.getDatos());
-        System.out.println(trabajador2.getDatos());
-        System.out.println(trabajador3.getDatos());
-        System.out.println(trabajador4.getDatos());
+        System.out.println(trabajador1.getDatos()+"\n"+trabajador2.getDatos()+"\n"+trabajador3.getDatos()+"\n"+trabajador4.getDatos());
+
+        System.out.println(Empleados.getIdSiguiente());
+
 
 
     }
@@ -44,6 +44,11 @@ class Empleados{
     // Getter para devolver la información del empleado
     public String getDatos(){
         return "El nombre es: " + nombre + " La sección es: " + seccion + " Su ID: "+ Id;
+    }
+
+    //Los métodos static no actúan sobre objetos
+    public static String getIdSiguiente(){
+        return "El siguiente Id es: " + IdSiguiente;
     }
 
     // Variables encapsuladas (objeto)

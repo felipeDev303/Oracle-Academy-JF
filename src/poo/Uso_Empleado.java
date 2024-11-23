@@ -66,6 +66,11 @@ class Empleado{
         altaContrato=calendario.getTime();
     }
 
+    // Sobrecarga de constructores
+    public Empleado (String nom){
+        this(nom,30000,2000,1,1);
+    }
+
     //Getter
     public String getNombre(){
         return nombre;
