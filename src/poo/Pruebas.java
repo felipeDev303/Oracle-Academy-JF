@@ -5,11 +5,15 @@ public class Pruebas {
 
         Empleados trabajador1=new Empleados("Felipe");
         Empleados trabajador2=new Empleados("Ana");
+        Empleados trabajador3=new Empleados("María");
+        Empleados trabajador4=new Empleados("Paulina");
 
         trabajador1.setSeccion("IT");
 
         System.out.println(trabajador1.getDatos());
         System.out.println(trabajador2.getDatos());
+        System.out.println(trabajador3.getDatos());
+        System.out.println(trabajador4.getDatos());
 
 
     }
@@ -22,6 +26,8 @@ class Empleados{
     public Empleados(String nom){
         nombre=nom;
         seccion="Administración";
+        Id=IdSiguiente;
+        IdSiguiente++;
     }
 
     // Setter para cambiar sección
@@ -37,10 +43,16 @@ class Empleados{
 
     // Getter para devolver la información del empleado
     public String getDatos(){
-        return "El nombre es: " + nombre + " La sección es: " + seccion;
+        return "El nombre es: " + nombre + " La sección es: " + seccion + " Su ID: "+ Id;
     }
 
-    // Variables encapsuladas
+    // Variables encapsuladas (objeto)
     private final String nombre; // Constante
     private String seccion;
+    private int Id;
+
+    // Variable de clase (al ser private no se puede utilizar fuera de la clase)
+    private static int IdSiguiente=1; // No es final ya que necesitamos que cambie correlativamente (final solo paa constantes)
+    //public static int Id;
+
 }
