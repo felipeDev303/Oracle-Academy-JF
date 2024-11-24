@@ -23,13 +23,13 @@ public class Automovil {
 
     // Getter datos generales
     public String get_datos_generales(){
-        return "La plataforma del vehículo "+ruedas+" ruedas "+
-                " mide " + largo/1000+" metros con un ancho de "
-                +ancho+" cm y un peso de plataforma"+peso_plataforma+" kg";
+        return "La plataforma del vehículo tiene "+ruedas+" ruedas,"+
+                " mide "+largo/1000+" metros con un ancho de "
+                +ancho+" cm y la plataforma pesa "+peso_plataforma+" kg";
     }
 
     // Setter color
-    public void establece_color(String color_auto){
+    public void set_color(String color_auto){
         color=color_auto;
     }
 

@@ -16,8 +16,8 @@ public class Furgoneta extends Automovil {
     }
 
     // Getter Clase hija
-    public String getDatosFuergoneta(){
-        return "La capacidad de carga es: "+capacidad_carga+" y las plazas son: "+plazas_extra;
+    public String getDatosFurgoneta(){
+        return "La capacidad de carga son: "+capacidad_carga+" kg y las plazas son: "+plazas_extra;
     }
 
 }

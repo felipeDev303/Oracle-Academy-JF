@@ -5,6 +5,17 @@ package poo;
 public class Uso_Vehiculo {
     public static void main(String[]args){
 
+        Automovil miauto1=new Automovil();
+        miauto1.set_color("Rojo");
+
+        Furgoneta mifurgoneta1=new Furgoneta(7,580);
+        mifurgoneta1.set_color("Azul");
+        mifurgoneta1.set_asientos("Si");
+        mifurgoneta1.set_climatizador("Si");
+
+        System.out.println(miauto1.get_datos_generales()+" "+miauto1.get_color());
+        System.out.println(mifurgoneta1.get_datos_generales()+". "+mifurgoneta1.get_color()+". "+mifurgoneta1.getDatosFurgoneta());
+
         /*Automovil miauto= new Automovil();
 
         miauto.establece_color(JOptionPane.showInputDialog("Introduce color"));
