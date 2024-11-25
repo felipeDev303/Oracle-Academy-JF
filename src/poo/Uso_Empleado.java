@@ -30,7 +30,9 @@ public class Uso_Empleado {
         }
 
         for(Empleado e: misEmpleados){
-            System.out.println("Nombre: " + e.getNombre() + " Sueldo: "+ e.getSueldo() + " Fecha Contrato: "+ e.getFechaContrato());
+            System.out.println("Nombre: " + e.getNombre()
+                    + " Sueldo: "+ e.getSueldo()
+                    + " Fecha Contrato: "+ e.getFechaContrato());
         }
     }
 }
@@ -49,6 +51,9 @@ class Empleado {
 
         // En la variable altaContrato almacenamos lo que nos retorne el método del objeto calendario
         altaContrato = calendario.getTime();
+
+        ++IdSiguiente;
+        Id=IdSiguiente;
     }
 
     // Sobrecarga de constructores
@@ -58,7 +63,7 @@ class Empleado {
 
     //Getter
     public String getNombre() {
-        return nombre;
+        return nombre +" Id: "+Id;
     }
 
     public double getSueldo() {
@@ -79,6 +84,8 @@ class Empleado {
     private String nombre;
     private double sueldo;
     private Date altaContrato;
+    private static int IdSiguiente;
+    private int Id;
 }
 
 class Jefatura extends Empleado {
