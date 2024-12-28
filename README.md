@@ -4,10 +4,50 @@ Este repositorio documenta mi viaje de aprendizaje en Java. A continuación, se 
 
 ---
 
-#### **Etapa 1: Fundamentos de Java** 🌱
-- [ ] **Introducción a Java**
-  - Historia y características del lenguaje.
-  - Configuración del entorno: JDK, IntelliJ IDEA.
+Aquí tienes una versión más completa con información de la documentación oficial de Oracle para la sección **Introducción a Java**:
+
+---
+
+#### **Etapa 1: Fundamentos de Java** 🌱  
+- [ ] **Introducción a Java**  
+  - **Historia y características del lenguaje**  
+    Java fue desarrollado por **Sun Microsystems** en 1995, liderado por James Gosling. Actualmente es mantenido por Oracle.  
+    **Características principales:**  
+    - **Plataforma independiente:** El código Java se compila a bytecode que puede ejecutarse en cualquier máquina que tenga una JVM (Java Virtual Machine).  
+    - **Orientado a objetos:** Java se basa en conceptos como clases, objetos, herencia, y polimorfismo.  
+    - **Seguridad:** Incluye características como la gestión de memoria automática y restricciones en el acceso a datos para evitar amenazas comunes.  
+    - **Multihilo:** Soporta múltiples hilos de ejecución para realizar tareas concurrentes.  
+    - **Bibliotecas amplias:** Java ofrece una rica API estándar para manejar tareas comunes como I/O, red, acceso a bases de datos y más.  
+
+    Más detalles en la [historia de Java en Oracle](https://docs.oracle.com/javase/tutorial/getStarted/intro/history.html).  
+
+  - **Configuración del entorno: JDK, IntelliJ IDEA**  
+    1. **Instalación del JDK (Java Development Kit):**  
+       - Descarga el JDK desde la [página oficial de Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).  
+       - Durante la instalación, asegúrate de configurar las variables de entorno, especialmente `JAVA_HOME`, apuntando al directorio donde instalaste el JDK.  
+
+    2. **Configuración de IntelliJ IDEA:**  
+       - Descarga IntelliJ IDEA desde [JetBrains](https://www.jetbrains.com/idea/). La versión Community es gratuita.  
+       - Configura un proyecto Java:  
+         - Ve a **File > New Project**.  
+         - Selecciona **Java** y vincula el JDK que instalaste previamente.  
+
+    3. **Primer programa Java:**  
+       Una vez configurado, crea un archivo `Main.java` en tu proyecto e inserta el siguiente código:  
+       ```java
+       public class Main {
+           public static void main(String[] args) {
+               System.out.println("¡Hola, Mundo!");
+           }
+       }
+       ```  
+       Ejecuta el programa para verificar que tu entorno está funcionando correctamente.  
+
+    Más detalles sobre la configuración en la [documentación oficial de Oracle](https://docs.oracle.com/javase/tutorial/getStarted/index.html).  
+
+---  
+
+Si necesitas extender esta sección o incluir ejemplos adicionales, ¡puedes indicármelo! 😊
 - [ ] **Sintaxis básica**
   - Variables y tipos de datos.
   - Operadores aritméticos y lógicos.
